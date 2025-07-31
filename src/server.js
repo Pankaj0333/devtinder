@@ -36,7 +36,7 @@ app.use(errorHandler); // Global error handler
 // 📦 Load env variables
 const PORT = process.env.PORT || 5000;
 
-// 🚀 Connect to DB then start server
+// 🚀 IIFE to run immediately Connect to DB then start server
 (async () => {
     try {
       await connectDB(); // ⛓️ MongoDB connection
